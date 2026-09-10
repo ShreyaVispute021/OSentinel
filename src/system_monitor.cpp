@@ -79,7 +79,7 @@ CPUInfo SystemMonitor::getCPUInfo() {
     auto first = readCPUStat();
 
     std::this_thread::sleep_for(
-        std::chrono::milliseconds(500)
+        std::chrono::milliseconds(1000)
     );
 
     auto second = readCPUStat();
